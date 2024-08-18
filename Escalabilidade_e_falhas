@@ -17,3 +17,16 @@ spec:
         image: <aws-account-id>.dkr.ecr.<regiao>.amazonaws.com/<nome-do-microsserviço>:latest
         ports:
         - containerPort: 8080
+
+
+
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: <nome-do-microsserviço>
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: <nome-do-microsserviço>
+
