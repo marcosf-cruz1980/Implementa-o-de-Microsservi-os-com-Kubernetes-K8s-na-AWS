@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: <nome-do-microsserviço>
+  name: noticias
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: <nome-do-microsserviço>
+      app: noticias
   template:
     metadata:
       labels:
-        app: <nome-do-microsserviço>
+        app: noticias
     spec:
       containers:
-      - name: <nome-do-microsserviço>
+      - name: noticias
         image: <aws-account-id>.dkr.ecr.<regiao>.amazonaws.com/<nome-do-microsserviço>:latest
         ports:
         - containerPort: 8080
