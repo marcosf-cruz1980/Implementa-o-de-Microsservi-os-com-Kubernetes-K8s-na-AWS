@@ -19,7 +19,12 @@ Microsservico-com-Kubernetes-K8s-na-AWS/docker
 <h3>c. Escalabilidade e Tolerância a Falhas:</h3>  
 Configure a escalabilidade automática e tolerância a falhas para os microsserviços.</h3>  
 
-Microsservico-com-Kubernetes-K8s-na-AWS/Escalabilidade_e_falhas
+Microsservico-com-Kubernetes-K8s-na-AWS/escalabilidade_e_falhas
+
 
 <h3>d. Atualização e Monitoramento:  </h3>
 Implemente procedimentos de atualização e monitore o desempenho dos microsserviços no K8s.</h3>  
+
+Microsservico-com-Kubernetes-K8s-na-AWS/atualizacao  
+Microsservico-com-Kubernetes-K8s-na-AWS/alertas
+
