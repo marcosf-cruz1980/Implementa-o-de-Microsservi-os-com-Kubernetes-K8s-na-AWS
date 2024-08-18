@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: noticias
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: noticias
+  template:
+    metadata:
+      labels:
+        app: noticias
+    spec:
+      containers:
+      - name: noticias
+        image: <aws-account-id>.dkr.ecr.<regiao>.amazonaws.com/<nome-do-microsserviço>:latest
+        ports:
+        - containerPort: 8080
